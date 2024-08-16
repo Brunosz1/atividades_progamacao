@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float quantidade_peixe;
+    float valor_excedente;
+    float multa;
+
+    printf("Digite a quantidade de peixe que foi pescado (em kg): ");
+    scanf("%f", &quantidade_peixe);
+    if (quantidade_peixe > 50) {
+        valor_excedente = quantidade_peixe - 50;
+        multa = valor_excedente * 4.00;
+    printf("Valor excedente: %.2f kg\n", valor_excedente);
+        printf("Multa para pagar: R$ %.2f\n", multa);
+    } else {
+    printf("Não tem multa para pagar.\n");
+    }
+    return 0;
+}

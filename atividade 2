@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+float temperatura (float c){
+
+    return c * (9.0 / 5.0) + 32.0;
+}
+
+
+int main(){
+	
+	float f, c;
+	printf("Digite a temperatura em Celsius:  ");
+	scanf("%f",&c);
+	
+	f = temperatura (c);
+	
+	printf("Resultado da conversao: %f\n",f);
+	return 0;
+}

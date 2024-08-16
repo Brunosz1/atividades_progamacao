@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+	float custo_fabrica;
+	float percentual_distribuidor = 0.28; // 28%
+	float percentual_impostos = 0.45;     // 45%
+    float custo_distribuidor;
+    float custo_impostos;
+    float custo_final;
+    
+    printf("Digite o custo de fabrica do carro (em R$): ");
+    scanf("%f", &custo_fabrica);
+    custo_distribuidor = custo_fabrica * percentual_distribuidor;
+    custo_impostos = custo_fabrica * percentual_impostos;
+    custo_final = custo_fabrica + custo_distribuidor + custo_impostos;
+    printf("O valor final a ser pago pelo consumidor e de: R$ %.2f\n", custo_final);
+}
